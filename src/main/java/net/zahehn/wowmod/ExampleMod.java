@@ -26,6 +26,9 @@ public class ExampleMod {
         modEventBus.addListener(this::commonSetup);
         MinecraftForge.EVENT_BUS.register(this);
 
+        ModCreativeModeTabs.register(modEventBus);
+        ModBlocks.register(modEventBus);
+        ModItems.register(modEventBus);
 
 
         modEventBus.addListener(this::addCreative);
